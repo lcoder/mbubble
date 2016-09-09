@@ -1,0 +1,5 @@
+@charset "UTF-8";
+/* 提示 */
+.mbubble { position: relative; zoom: 1; }
+.mbubble .mbubble_title { opacity: 0; visibility: hidden; position: absolute; top: 3.6em; left: -1.5em; z-index: 2; color: #fff; border-radius: 1px; background-color: #666; background-color: rgba(0,0,0,0.6); -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -ms-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
+.mbubble .mbubble_title.on { opacity: 1; visibility: visible; top: 2.6em; }

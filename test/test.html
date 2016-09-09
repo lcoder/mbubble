@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>mbubble测试用例</title>
+<script type="text/javascript" src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="../index.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/ui-default.css"/>
+<style type="text/css">
+    .mbubble .mbubble_title::before{ content: '';position: absolute;left: 46%;top: -8px;width: 0;height: 0;border-style: solid;border-width: 0 6px 8px 6px;border-color: transparent transparent rgba(0,0,0,0.6) transparent; }
+    .mbubble .mbubble_title { top: 2.5em;left: 10px; padding: 2px 20px; ;border-radius: 4px;line-height: 2.2em;font-size: 14px;}
+    .mbubble .mbubble_title.on  { top: 1.8em; }
+</style>
+</head>
+<body>
+<a href="javascript:void 0;" class="mbubble">移动此处，有提示<span class="mbubble_title">提示内容</span></a>
+
+<script type="text/javascript">
+$( function(){
+    $(".mbubble").mbubble(
+    {
+        type: 'fastShow',
+        hideDelay: 3000
+    });
+} ) ;
+</script>
+</body>
+</html>
